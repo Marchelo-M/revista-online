@@ -1,0 +1,38 @@
+/* aside */ 
+
+.aside-container {
+    display: none;
+    
+    .aside__content {
+        @include border-bottom($grey);
+    }
+}
+
+.aside__tags {
+    @include border-bottom($grey);
+    padding-bottom: 10px;   
+    .tags__items {
+        list-style: none;
+        text-align: right;
+        margin: 0;
+    }
+    
+    .tags__item {
+        padding: 2px 4px;
+        background-color: $blue;
+        color: $white;
+        display: inline-block;
+        margin: 5px 2px;
+    }
+}
+
+.aside__important img {
+    width: 100%;
+}
+
+@media only screen and (min-width: 992px) {
+    .aside-container {
+        display: inline-block;
+        margin-left: 30px;
+    }
+}
